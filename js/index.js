@@ -78,6 +78,8 @@ button.textContent = siteContent.cta.button;
 let ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute("src", siteContent['cta']['img-src']);
 
+
+//features/about
 let features = document.querySelector('.top-content .text-content');
 let featuresH4 = document.createElement('h4');
 featuresH4.textContent = siteContent["main-content"]['features-h4'];
@@ -91,6 +93,9 @@ let textContentTop = document.querySelector('.top-content .text-content');
 textContentTop.style.display = 'flex';
 
 
+features.style.width = '100%';
+
+
 //////             
 
 
@@ -102,11 +107,12 @@ about.appendChild(aboutH4);
 let aboutContent = document.createElement('p');
 aboutContent.textContent = siteContent["main-content"]['about-content'];
 about.appendChild(aboutContent);
-about.style.width = '45%';
 
 
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+about.style.width = "100%";
 
 //services, product, vision
 //services
@@ -119,6 +125,9 @@ let servicesContent = document.createElement('p');
 servicesContent.textContent = siteContent['main-content']['services-content'];
 services.appendChild(servicesContent);
 
+services.style.width = "35%";
+
+
 //product
 let product = document.querySelector('.bottom-content .text-content')
 let productH4 = document.createElement("h4");
@@ -128,6 +137,9 @@ product.appendChild(productH4);
 let productContent = document.createElement('p');
 productContent.textContent = siteContent['main-content']['product-content'];
 product.appendChild(productContent);
+
+product.style.width = "35%";
+
 
 
 //vision
@@ -139,6 +151,13 @@ vision.appendChild(visionH4);
 let visionContent = document.createElement('p');
 visionContent.textContent = siteContent['main-content']['vision-content'];
 vision.appendChild(visionContent);
+
+let bottom = querySelector('.bottom-content');
+bottom.style.display = flex;
+
+vision.style.width = "35%";
+
+
 
 //contact
 let contact = document.querySelector('.contact');
